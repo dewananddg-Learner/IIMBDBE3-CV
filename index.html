@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dewanand Gharde | CV</title>
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --paper: #ffffff;
+        --primary: #215b1f;
+        --accent: #d7a64a;
+        --text: #1a1a1a;
+        --muted: #5c6470;
+        --line: #dfe4ea;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 40px auto;
+        background: var(--paper);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        border: 1px solid var(--line);
+      }
+
+      .header {
+        background: #4a502c;
+        color: #fff;
+        padding: 32px 42px 26px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 0.04em;
+      }
+
+      .header .subtitle {
+        margin-top: 8px;
+        font-size: 1.05rem;
+        color: #dfeaf9;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+      }
+
+      .sidebar {
+        background: #f8f9fb;
+        border-right: 1px solid var(--line);
+        padding: 28px 24px 30px;
+      }
+
+      .profile-photo-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px;
+      }
+
+      .profile-photo {
+        width: 180px;
+        height: 210px;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 3px solid var(--accent);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        background: #eaeef3;
+      }
+
+      .main {
+        padding: 28px 30px 30px;
+      }
+
+      .card {
+        margin-bottom: 26px;
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        color: var(--primary);
+        font-size: 1.15rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 6px;
+      }
+
+      .info-list, .skills-list, .ref-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .info-list li, .ref-list li {
+        margin: 8px 0;
+        color: var(--text);
+      }
+
+      .label {
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .skills-list li {
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 8px;
+      }
+
+      .skills-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-size: 1.3rem;
+        line-height: 1;
+      }
+
+      .strengths {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .strengths span {
+        background: #ecf1f7;
+        color: var(--primary);
+        border: 1px solid #19bbbe;
+        border-radius: 16px;
+        padding: 6px 11px;
+        font-size: 0.92rem;
+      }
+
+      .role {
+        margin: 0 0 6px;
+        font-size: 1.12rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .company {
+        margin: 0 0 8px;
+        font-weight: 700;
+      }
+
+      .period {
+        color: var(--muted);
+        font-size: 0.96rem;
+        font-weight: 600;
+        margin: 0 0 10px;
+      }
+
+      .main p, .main li {
+        color: #2a2a2a;
+      }
+
+      .job {
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .job:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .job ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+      }
+
+      .education-item, .course-item {
+        margin-bottom: 12px;
+      }
+
+      .education-item strong, .course-item strong {
+        color: var(--primary);
+      }
+
+      @media (max-width: 800px) {
+        .content {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          border-right: none;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .header {
+          padding: 24px 22px 18px;
+        }
+
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        .main {
+          padding: 22px 18px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>DEWANAND GHARDE</h1>
+        <div class="subtitle">Business Development Leader | Food &amp; Beverage Industry | Dairy &amp; Ice Cream Specialist</div>
+      </header>
+
+      <div class="content">
+        <aside class="sidebar">
+          <div class="profile-photo-wrap">
+            <img
+              class="profile-photo"
+              src="./passport-photo.jpg"
+              alt="Dewanand Gharde Photo"
+            />
+          </div>
+
+          <section class="card">
+            <h2>Contact</h2>
+            <ul class="info-list">
+              <li><span class="label">Address:</span><br />1093, Prestige North Point, Kamanhalli, Bangalore - 43, India</li>
+              <li><span class="label">Phone:</span><br />+91 8527123434</li>
+              <li><span class="label">Email:</span><br />dewanandtp.gharde@tetrapak.com</li>
+              <li><span class="label">LinkedIn:</span><br />linkedin.com/in/dewanand</li>
+              <li><span class="label">DOB:</span><br />03-08-1966</li>
+              <li><span class="label">Nationality:</span><br />Indian</li>
+              <li><span class="label">PP:</span><br />T3859602</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+              <li>Critical thinking and problem solving</li>
+              <li>Ability to work in a team</li>
+              <li>Customer service</li>
+              <li>Leadership skills</li>
+              <li>Fast learner</li>
+              <li>Communication skills</li>
+              <li>Hard working</li>
+              <li>Complex problem solving</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Clifton Strengths</h2>
+            <div class="strengths">
+              <span>Learner</span>
+              <span>Input</span>
+              <span>Intellection</span>
+              <span>Futuristic</span>
+              <span>Responsibility</span>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Hobbies</h2>
+            <ul class="skills-list">
+              <li>Painting</li>
+              <li>Cycling</li>
+              <li>Yoga</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>References</h2>
+            <ul class="ref-list">
+              <li><strong>Samit Chowdhury</strong><br />Vice President Global Marketing, Food &amp; Beverage, and Animal Health<br />USA<br />+1 (651) 245 6297</li>
+              <li><strong>Harsch Koshti</strong><br />Director Strategic Marketing, Taste - Asia Pacific &amp; Middle East Africa<br />Singapore<br />+65 88703678</li>
+            </ul>
+          </section>
+        </aside>
+
+        <main class="main">
+          <section class="card">
+            <h2>Profile</h2>
+            <p>
+              Strong Food Category knowledge in Dairy &amp; Dairy Products, Aseptic Processing and Packaging of Dairy and Beverages,
+              Ice Cream, Prepared Food and Cheese Industry. With strong technical and commercial knowledge, understanding the purchasing
+              needs of customers and customer relationships, I was able to secure major deals in the SAEA&amp;O region.
+            </p>
+            <p>
+              Worked as Cluster Category Leader for Ice Cream for SAEA&amp;O Markets, supporting markets on portfolio needs, New Product
+              Development and Innovation (CSN) requirements, coordinating with the central team to get the right solution for markets.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Employment History</h2>
+
+            <div class="job">
+              <p class="role">Manager – Business Development, Ice Cream</p>
+              <p class="company">BSIC-Denmark, based in India at Tetra Pak India Pvt Ltd</p>
+              <p class="period">Jan-2023 onwards</p>
+              <ul>
+                <li>Moved to India as part of TNC from Jan-23 and is responsible for Ice Cream equipment business development in SAM and East Africa.</li>
+                <li>Working with Market Companies on customer solutions and local sales capability development.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <p class="role">PSE – Cluster Category Leader, Ice Cream</p>
+              <p class="company">Tetra Pak Southeast Asia Pte Ltd, Singapore</p>
+              <p class="period">September 2018 – Dec 2022</p>
+              <ul>
+                <li>Worked with Tetra Pak South Asia Pte Ltd as PSE-Cluster Category Leader – Ice Cream Category.</li>
+                <li>Responsible for SAEA&amp;O (South Asia, East Asia and Oceania), based out of Singapore.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <p class="role">Sr. Manager – Plant Sales</p>
+              <p class="company">Tetra Pak India Private Limited, Gurgaon</p>
+              <p class="period">March 2015 – September 2018</p>
+              <ul>
+                <li>Responsible for B2B sales in the region and key account management for Nestle, PepsiCo, Coca Cola, and Dabur.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <p class="role">Category Sales Manager</p>
+              <p class="company">Tetra Pak India Private Limited, Pune, Bangalore</p>
+              <p class="period">November 2009 – March 2015</p>
+              <ul>
+                <li>Responsible for sales of Dairy (Chilled and Ambient UHT), Ice Cream, Cheese, and Powder categories in the region and in SAM market.</li>
+                <li>Secured the first automated cheese plant for Amul, first microfiltration plant for Parag Dairy, and complete ice cream plant for Amul.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <p class="role">Regional Sales Manager</p>
+              <p class="company">Tetra Pak India Private Limited, Bangalore</p>
+              <p class="period">January 2000 – November 2009</p>
+              <ul>
+                <li>Worked in the South region selling solutions for five food categories: Dairy Chilled, Dairy Ambient for Aseptic Packing, Beverages, Prepared Foods, and Ice Cream.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <p class="role">Sr. Sales Engineer</p>
+              <p class="company">Tetra Pak Processing System (Division of Alfa Laval India Ltd), Bangalore</p>
+              <p class="period">July 1997 – December 1999</p>
+              <ul>
+                <li>Worked with Alfa Laval's Food Processing division for selling food processing lines to Dairy in the South Region.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <p class="role">General Manager - Technical</p>
+              <p class="company">Indiana Dairy Specialties Ltd., Hyderabad, Bangalore, Nagpur</p>
+              <p class="period">December 1988 – June 1997</p>
+              <ul>
+                <li>Worked in Ice Cream Production, Dairy and Casein Production.</li>
+                <li>Responsible for procurement of capital equipment for project setup and regular manufacturing technical procurement.</li>
+                <li>Set up 3 ice cream and dairy plants in Hyderabad, Bangalore, and Nagpur.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Education</h2>
+            <div class="education-item">
+              <strong>Diploma in Dairy Technology</strong><br />
+              Dairy Science Institute, Mumbai<br />
+              April 1986 – May 1988
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Courses &amp; Training</h2>
+            <div class="course-item">
+              <strong>Evolve – Leadership Training</strong><br />
+              BTS International<br />
+              Aug 2020 – Feb 2021
+            </div>
+            <div class="course-item">
+              <strong>Management Development Program</strong><br />
+              Medin International<br />
+              January 2018 – January 2020
+            </div>
+            <div class="course-item">
+              <strong>Impact Leadership Training</strong><br />
+              July 2017
+            </div>
+            <div class="course-item">
+              <strong>Advanced Excel Training</strong><br />
+              Oct 2017
+            </div>
+            <div class="course-item">
+              <strong>Plant Sales Strategy</strong><br />
+              Global Training &amp; Development, Lund<br />
+              July 2012
+            </div>
+            <div class="course-item">
+              <strong>Managing Projects for Non-Project Managers</strong><br />
+              Global Training &amp; Development<br />
+              March 2012
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
