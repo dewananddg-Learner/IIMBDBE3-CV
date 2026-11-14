@@ -5,189 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dewanand Gharde | CV</title>
     <style>
-      :root {
-        --bg: #f4f5f7;
-        --paper: #ffffff;
-        --primary: #215b1f;
-        --accent: #d7a64a;
-        --text: #1a1a1a;
-        --muted: #5c6470;
-        --line: #dfe4ea;
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+            :root {
+              --bg: #eef3ee;
+              --paper: #ffffff;
+              --primary: #1d4d3f;
+              --primary-dark: #12352d;
+              --accent: #d9a441;
+              --accent-soft: #f7ead0;
+              --text: #1b1b1b;
+              --muted: #5e6c68;
+              --line: #dfe9e5;
+              --navy: #2d3e50;
+            }
+
+            * { box-sizing: border-box; }
+
+            html {
+              scroll-behavior: smooth;
+            }
+
+            body {
+              margin: 0;
+              font-family: 'Roboto', Arial, sans-serif;
+              background: linear-gradient(135deg, #edf5f0 0%, #f7f2e9 100%);
+              color: var(--text);
+              line-height: 1.6;
+            }
+
+            .page {
+              max-width: 1180px;
+              margin: 40px auto;
+              background: var(--paper);
+              box-shadow: 0 18px 40px rgba(17, 40, 35, 0.10);
+              border: 1px solid var(--line);
+              border-radius: 18px;
+              overflow: hidden;
+            }
+
+            .header {
+              background: linear-gradient(135deg, var(--navy) 0%, var(--primary) 100%);
+              color: #fff;
+              padding: 18px 42px 28px;
+            }
+
+            .top-nav {
+              display: flex;
+              justify-content: flex-end;
+              gap: 18px;
+              flex-wrap: wrap;
+              margin-bottom: 20px;
+            }
+
+            .top-nav a {
+              color: #f0f5f2;
+              text-decoration: none;
+              font-size: 0.88rem;
+              font-weight: 600;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              padding: 7px 12px;
+              border-radius: 999px;
+              transition: 0.2s ease;
+            }
+
+            .top-nav a:hover {
+              background: rgba(255,255,255,0.12);
+            }
+
+            .header-content {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 20px;
+            }
+
+            .header h1 {
+              margin: 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 2.6rem;
+              line-height: 1.1;
+              letter-spacing: 0.05em;
+            }
+
+            .eyebrow {
+              margin: 0 0 10px;
+              font-size: 0.8rem;
+              letter-spacing: 0.18em;
+              text-transform: uppercase;
+              color: #deebdf;
+            }
+
+            .header .subtitle {
+              margin-top: 10px;
+              font-size: 1.05rem;
+              color: #edf4ef;
+              max-width: 700px;
+            }
+
+            .content {
+              display: grid;
+              grid-template-columns: 320px 1fr;
+            }
+
+            .sidebar {
+              background: #f8fbf8;
+              border-right: 1px solid var(--line);
+              padding: 28px 24px 30px;
+            }
+
+            .profile-photo-wrap {
+              display: flex;
+              justify-content: center;
+              margin: 0 0 20px;
+            }
+
+            .profile-photo {
+              width: 180px;
+              height: 210px;
+              object-fit: cover;
+              border-radius: 18px;
+              border: 3px solid var(--accent);
+              box-shadow: 0 12px 28px rgba(18, 53, 45, 0.18);
+              background: #eaeef3;
+            }
+
+            .main {
+              padding: 28px 30px 30px;
+            }
+
+            .card {
+              margin-bottom: 26px;
+              background: #fff;
+              border: 1px solid var(--line);
+              border-radius: 14px;
+              padding: 20px 22px;
+            }
+
+            .card h2 {
+              margin: 0 0 12px;
+              color: var(--primary);
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 1.12rem;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              border-bottom: 2px solid var(--accent);
+              padding-bottom: 8px;
       }
 
-      * { box-sizing: border-box; }
+            .info-list, .skills-list, .ref-list {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+            }
 
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
+            .info-list li, .ref-list li {
+              margin: 8px 0;
+              color: var(--text);
       }
 
-      .page {
-        max-width: 1100px;
-        margin: 40px auto;
-        background: var(--paper);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-        border: 1px solid var(--line);
+            .label {
+              font-weight: 700;
+              color: var(--primary);
+            }
+
+            .skills-list li {
+              position: relative;
+              padding-left: 18px;
+              margin-bottom: 8px;
       }
 
-      .header {
-        background: #4a502c;
-        color: #fff;
-        padding: 32px 42px 26px;
+            .skills-list li::before {
+              content: "•";
+              position: absolute;
+              left: 0;
+              color: var(--accent);
+              font-size: 1.3rem;
+              line-height: 1;
       }
 
-      .header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        letter-spacing: 0.04em;
-      }
+            .strengths {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 8px;
+            }
 
-      .header .subtitle {
-        margin-top: 8px;
-        font-size: 1.05rem;
-        color: #dfeaf9;
-      }
+            .strengths span {
+              background: var(--accent-soft);
+              color: var(--primary-dark);
+              border: 1px solid rgba(217, 164, 65, 0.5);
+              border-radius: 16px;
+              padding: 7px 12px;
+              font-size: 0.9rem;
+              font-weight: 600;
+            }
 
-      .content {
-        display: grid;
-        grid-template-columns: 320px 1fr;
-      }
+            .role {
+              margin: 0 0 6px;
+              font-size: 1.12rem;
+              font-weight: 700;
+              color: var(--primary);
+            }
 
-      .sidebar {
-        background: #f8f9fb;
-        border-right: 1px solid var(--line);
-        padding: 28px 24px 30px;
-      }
+            .company {
+              margin: 0 0 8px;
+              font-weight: 700;
+            }
 
-      .profile-photo-wrap {
-        display: flex;
-        justify-content: center;
-        margin: 0 0 20px;
-      }
+            .period {
+              color: var(--muted);
+              font-size: 0.96rem;
+              font-weight: 600;
+              margin: 0 0 10px;
+            }
 
-      .profile-photo {
-        width: 180px;
-        height: 210px;
-        object-fit: cover;
-        border-radius: 14px;
-        border: 3px solid var(--accent);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        background: #eaeef3;
-      }
+            .main p, .main li {
+              color: #2a2a2a;
+            }
 
-      .main {
-        padding: 28px 30px 30px;
-      }
+            .job {
+              margin-bottom: 20px;
+              padding-bottom: 14px;
+              border-bottom: 1px solid var(--line);
+            }
 
-      .card {
-        margin-bottom: 26px;
-      }
+            .job:last-child {
+              border-bottom: none;
+              padding-bottom: 0;
+            }
 
-      .card h2 {
-        margin: 0 0 12px;
-        color: var(--primary);
-        font-size: 1.15rem;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        border-bottom: 2px solid var(--accent);
-        padding-bottom: 6px;
-      }
+            .job ul {
+              margin: 8px 0 0 18px;
+              padding: 0;
+            }
 
-      .info-list, .skills-list, .ref-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
+            .education-item, .course-item {
+              margin-bottom: 12px;
+            }
 
-      .info-list li, .ref-list li {
-        margin: 8px 0;
-        color: var(--text);
-      }
-
-      .label {
-        font-weight: 700;
-        color: var(--primary);
-      }
-
-      .skills-list li {
-        position: relative;
-        padding-left: 18px;
-        margin-bottom: 8px;
-      }
-
-      .skills-list li::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: var(--accent);
-        font-size: 1.3rem;
-        line-height: 1;
-      }
-
-      .strengths {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .strengths span {
-        background: #ecf1f7;
-        color: var(--primary);
-        border: 1px solid #19bbbe;
-        border-radius: 16px;
-        padding: 6px 11px;
-        font-size: 0.92rem;
-      }
-
-      .role {
-        margin: 0 0 6px;
-        font-size: 1.12rem;
-        font-weight: 700;
-        color: var(--primary);
-      }
-
-      .company {
-        margin: 0 0 8px;
-        font-weight: 700;
-      }
-
-      .period {
-        color: var(--muted);
-        font-size: 0.96rem;
-        font-weight: 600;
-        margin: 0 0 10px;
-      }
-
-      .main p, .main li {
-        color: #2a2a2a;
-      }
-
-      .job {
-        margin-bottom: 20px;
-        padding-bottom: 14px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .job:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-
-      .job ul {
-        margin: 8px 0 0 18px;
-        padding: 0;
-      }
-
-      .education-item, .course-item {
-        margin-bottom: 12px;
-      }
-
-      .education-item strong, .course-item strong {
-        color: var(--primary);
-      }
+            .education-item strong, .course-item strong {
+              color: var(--primary);
+            }
 
       @media (max-width: 800px) {
         .content {
@@ -216,8 +275,20 @@
   <body>
     <div class="page">
       <header class="header">
-        <h1>DEWANAND GHARDE</h1>
-        <div class="subtitle">Business Development Leader | Food &amp; Beverage Industry | Dairy &amp; Ice Cream Specialist</div>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="#profile">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-content">
+          <div>
+            <p class="eyebrow">Professional Resume</p>
+            <h1>DEWANAND GHARDE</h1>
+            <div class="subtitle">Business Development Leader | Food &amp; Beverage Industry | Dairy &amp; Ice Cream Specialist</div>
+          </div>
+        </div>
       </header>
 
       <div class="content">
@@ -230,7 +301,7 @@
             />
           </div>
 
-          <section class="card">
+          <section class="card" id="contact">
             <h2>Contact</h2>
             <ul class="info-list">
               <li><span class="label">Address:</span><br />1093, Prestige North Point, Kamanhalli, Bangalore - 43, India</li>
@@ -287,7 +358,7 @@
         </aside>
 
         <main class="main">
-          <section class="card">
+          <section class="card" id="profile">
             <h2>Profile</h2>
             <p>
               Strong Food Category knowledge in Dairy &amp; Dairy Products, Aseptic Processing and Packaging of Dairy and Beverages,
@@ -300,7 +371,7 @@
             </p>
           </section>
 
-          <section class="card">
+          <section class="card" id="experience">
             <h2>Employment History</h2>
 
             <div class="job">
@@ -372,7 +443,7 @@
             </div>
           </section>
 
-          <section class="card">
+          <section class="card" id="education">
             <h2>Education</h2>
             <div class="education-item">
               <strong>Diploma in Dairy Technology</strong><br />
